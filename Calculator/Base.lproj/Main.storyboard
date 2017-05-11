@@ -112,6 +112,9 @@
                                                 <state key="normal" title="×">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KgP-iR-qoz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -211,7 +214,7 @@
                                         <rect key="frame" x="0.0" y="474" width="320" height="94"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-zJ-Bos">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="94"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="94"/>
                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                                 <state key="normal" title="0">
@@ -219,7 +222,7 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K5-Rp-tbT">
-                                                <rect key="frame" x="160.5" y="0.0" width="79.5" height="94"/>
+                                                <rect key="frame" x="160" y="0.0" width="79.5" height="94"/>
                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                                 <state key="normal" title=".">
@@ -227,12 +230,15 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7D-Df-sNL">
-                                                <rect key="frame" x="241" y="0.0" width="79" height="94"/>
+                                                <rect key="frame" x="240.5" y="0.0" width="79.5" height="94"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="equals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Us9-xl-9f4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -253,11 +259,12 @@
                     </view>
                     <connections>
                         <outlet property="labelDisplay" destination="bl0-y5-9sl" id="C30-FC-YZj"/>
+                        <outlet property="multiply" destination="CN5-mn-Xza" id="xff-I6-D55"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95.625" y="157.3943661971831"/>
+            <point key="canvasLocation" x="-24" y="81"/>
         </scene>
     </scenes>
 </document>

@@ -20,6 +20,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Clear the contents of the label
+        
+        labelDisplay.text = ""
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,5 +83,23 @@ class ViewController: UIViewController {
         model.addToNewValue(digit: "9")
         labelDisplay.text = model.providedValue
     }
+    
+    @IBAction func multiply(_ sender: Any) {
+        
+        model.multiply()
+        
+    }
+    
+    
+    @IBAction func equals(_ sender: Any) {
+  
+    model.equals()
+    
+    }
+    
+    
+    
+    
 }
+
 
