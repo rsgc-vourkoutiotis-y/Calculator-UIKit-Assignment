@@ -94,12 +94,19 @@ class ViewController: UIViewController {
     @IBAction func equals(_ sender: Any) {
   
     model.equals()
-    
+        if model.computedValue != nil {
+            
+    labelDisplay.text = String(describing: model.computedValue!)
+            labelDisplay.text = String(format: "%g", model.computedValue!)
+        }
+        
     }
     
     
+    @IBAction func divide(_ sender: Any) {
+    model.divide()
     
-    
+    }
 }
 
 
