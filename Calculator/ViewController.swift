@@ -102,11 +102,21 @@ class ViewController: UIViewController {
         
     }
     
-    
     @IBAction func divide(_ sender: Any) {
     model.divide()
     
     }
-}
-
-
+    
+    
+    @IBAction func addition(_ sender: Any) {
+        model.addition()
+    
+    }
+ 
+    
+    @IBAction func subtraction(_ sender: Any) {
+        model.subtraction()
+    }
+    
+    }
+    
