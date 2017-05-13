@@ -118,5 +118,12 @@ class ViewController: UIViewController {
         model.subtraction()
     }
     
+    
+    
+    @IBAction func clear(_ sender: Any) {
+        model.clear()
+        labelDisplay.text = model.providedValue
     }
     
+}
+

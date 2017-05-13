@@ -125,6 +125,7 @@ class Calculator {
         operation = nil
         providedValue = ""
         computedValue = nil
+        updateState()
     }
     
     func addition() {
