@@ -32,6 +32,13 @@ class ViewController: UIViewController {
          // Dispose of any resources that can be recreated.
     }
 //Adds all of the # buttons
+    
+    
+    @IBAction func zeroPressed(_ sender: Any) {
+        model.addToNewValue(digit: "0")
+        labelDisplay.text = model.providedValue
+    }
+    
     @IBAction func onePressed(_ sender: Any){
         model.addToNewValue(digit: "1")
         labelDisplay.text = model.providedValue
