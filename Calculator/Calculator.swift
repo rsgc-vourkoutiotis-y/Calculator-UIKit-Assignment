@@ -106,9 +106,9 @@ class Calculator {
             }else{
                 computedValue = 0
             }
+            
         }
-        
-        
+      
         // The operation selected has been performed, so get ready to receive new operation
         // and new value
         operation = nil
@@ -152,4 +152,18 @@ class Calculator {
         updateState()
 }
 
+    func plusminus() {
+        if providedValue == "" {
+            if var yv = computedValue {
+                yv = yv * -1
+                providedValue = String(format: "%g", yv)
+            }
+        }else{
+            if var yv = Double(providedValue){
+                yv = yv * -1
+                providedValue = String(format: "%g", yv)
+            }
+        }
+    }
+    
 }
