@@ -84,6 +84,11 @@ class ViewController: UIViewController {
         labelDisplay.text = model.providedValue
     }
     
+    @IBAction func decimal(_ sender: Any) {
+        model.addToNewValue(digit: ".")
+        labelDisplay.text = model.providedValue
+    }
+
     @IBAction func multiply(_ sender: Any) {
         
         model.multiply()
