@@ -153,7 +153,7 @@ class Calculator {
         updateState()
 }
 
-    //Making the Plus Minus Action
+    //Making the Plus Minus Function
     // This first one makes the toggling the button turns the number negative as you are multiplying the number by -1
     func plusminus() {
         if providedValue == "" {

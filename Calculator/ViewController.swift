@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
          // Dispose of any resources that can be recreated.
     }
-//Adds all of the # buttons
+//Adds all of the # Action
     
     
     @IBAction func zeroPressed(_ sender: Any) {
@@ -90,19 +90,19 @@ class ViewController: UIViewController {
         model.addToNewValue(digit: "9")
         labelDisplay.text = model.providedValue
     }
-    //Adds the Decimal Function
+    //Adds the Decimal Action
     @IBAction func decimal(_ sender: Any) {
         model.addToNewValue(digit: ".")
         labelDisplay.text = model.providedValue
     }
-    //Adds the Multiply Function
+    //Adds the Multiply Action
     @IBAction func multiply(_ sender: Any) {
         
         model.multiply()
         
     }
     
-    //Adds the Equals Function
+    //Adds the Equals Action
     @IBAction func equals(_ sender: Any) {
   
     model.equals()
@@ -113,36 +113,36 @@ class ViewController: UIViewController {
         }
         
     }
-    //Adds the Divide Function
+    //Adds the Divide Action
     @IBAction func divide(_ sender: Any) {
     model.divide()
     
     }
     
-    //Adds the Addition Function
+    //Adds the Addition Action
     @IBAction func addition(_ sender: Any) {
         model.addition()
     
     }
  
-    //Adds the Subtraction Function
+    //Adds the Subtraction Action
     @IBAction func subtraction(_ sender: Any) {
         model.subtraction()
     }
     
     
-    //Adds the Clear Function
+    //Adds the Clear Action
     @IBAction func clear(_ sender: Any) {
         model.clear()
         labelDisplay.text = model.providedValue
     }
-    //Adds the Percentage Function
+    //Adds the Percentage Action
     @IBAction func percentage(_ sender: Any) {
         model.percentage()
         labelDisplay.text = String (format:"%g", model.computedValue!)
     }
     
-    //Adds the Plus Minus function
+    //Adds the Plus Minus Action
     @IBAction func Plusminus(_ sender: Any) {
         model.plusminus()
         labelDisplay.text = model.providedValue
