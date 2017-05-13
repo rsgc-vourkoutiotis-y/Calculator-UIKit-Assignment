@@ -130,5 +130,10 @@ class ViewController: UIViewController {
         labelDisplay.text = model.providedValue
     }
     
+    @IBAction func percentage(_ sender: Any) {
+        model.percentage()
+        labelDisplay.text = String (format:"%g", model.computedValue!)
+    }
+    
 }
 

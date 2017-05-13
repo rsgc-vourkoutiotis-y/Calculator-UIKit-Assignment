@@ -98,7 +98,16 @@ class Calculator {
         } else if operation == Operation.subtraction {
             computedValue = computedValue!
             - Double(providedValue)!
+        } else if
+        operation == Operation.percentage {
+            if computedValue != nil {
+        computedValue = computedValue! * (0.01)
+                
+            }else{
+                computedValue = 0
+            }
         }
+        
         
         // The operation selected has been performed, so get ready to receive new operation
         // and new value
@@ -138,4 +147,9 @@ class Calculator {
         updateState()
     }
     
+    func percentage() {
+        operation = Operation.percentage
+        updateState()
+}
+
 }
