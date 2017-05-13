@@ -89,6 +89,7 @@ class Calculator {
     func equals() {
         
         // Check operation type
+        //Adds the Operations for all of the actions
         if operation == Operation.multiplication {
             computedValue = computedValue! * Double(providedValue)!
         } else if operation == Operation.division {
@@ -136,28 +137,31 @@ class Calculator {
         computedValue = nil
         updateState()
     }
-    
+    //Addition Function
     func addition() {
         operation = Operation.addition
         updateState()
     }
-    
+    //Subtraction Function
     func subtraction() {
         operation = Operation.subtraction
         updateState()
     }
-    
+    //Percentage Function
     func percentage() {
         operation = Operation.percentage
         updateState()
 }
 
+    //Making the Plus Minus Action
     func plusminus() {
         if providedValue == "" {
             if var yv = computedValue {
                 yv = yv * -1
                 providedValue = String(format: "%g", yv)
             }
+            
+            //Second Part of the Plus Minus
         }else{
             if var yv = Double(providedValue){
                 yv = yv * -1

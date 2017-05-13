@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
          // Dispose of any resources that can be recreated.
     }
-
+//Adds all of the # buttons
     @IBAction func onePressed(_ sender: Any){
         model.addToNewValue(digit: "1")
         labelDisplay.text = model.providedValue
@@ -83,19 +83,19 @@ class ViewController: UIViewController {
         model.addToNewValue(digit: "9")
         labelDisplay.text = model.providedValue
     }
-    
+    //Adds the Decimal Function
     @IBAction func decimal(_ sender: Any) {
         model.addToNewValue(digit: ".")
         labelDisplay.text = model.providedValue
     }
-
+    //Adds the Multiply Function
     @IBAction func multiply(_ sender: Any) {
         
         model.multiply()
         
     }
     
-    
+    //Adds the Equals Function
     @IBAction func equals(_ sender: Any) {
   
     model.equals()
@@ -106,36 +106,36 @@ class ViewController: UIViewController {
         }
         
     }
-    
+    //Adds the Divide Function
     @IBAction func divide(_ sender: Any) {
     model.divide()
     
     }
     
-    
+    //Adds the Addition Function
     @IBAction func addition(_ sender: Any) {
         model.addition()
     
     }
  
-    
+    //Adds the Subtraction Function
     @IBAction func subtraction(_ sender: Any) {
         model.subtraction()
     }
     
     
-    
+    //Adds the Clear Function
     @IBAction func clear(_ sender: Any) {
         model.clear()
         labelDisplay.text = model.providedValue
     }
-    
+    //Adds the Percentage Function
     @IBAction func percentage(_ sender: Any) {
         model.percentage()
         labelDisplay.text = String (format:"%g", model.computedValue!)
     }
     
-    
+    //Adds the Plus Minus function
     @IBAction func Plusminus(_ sender: Any) {
         model.plusminus()
         labelDisplay.text = model.providedValue
