@@ -154,6 +154,7 @@ class Calculator {
 }
 
     //Making the Plus Minus Action
+    // This first one makes the toggling the button turns the number negative as you are multiplying the number by -1
     func plusminus() {
         if providedValue == "" {
             if var yv = computedValue {
@@ -162,6 +163,7 @@ class Calculator {
             }
             
             //Second Part of the Plus Minus
+            //The second one makes toggling the button first positive as you are doubling the -1, so -1 *-1 = a postive
         }else{
             if var yv = Double(providedValue){
                 yv = yv * -1
